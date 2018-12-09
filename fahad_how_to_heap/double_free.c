@@ -68,8 +68,7 @@ int main()
 	int temp=0;
 	do{
 		if(temp > 0)idx=temp;
-		//printf("the idx now is : %d\n",idx);
-		//printf("the temp now is : %d\n",temp);
+
 		show_menu();
 		printf("Enter:");
 		scanf("%d",&num);		
