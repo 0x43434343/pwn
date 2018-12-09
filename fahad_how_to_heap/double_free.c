@@ -61,7 +61,7 @@ int main()
 
 {
 
-	/*  the purpose of this function is to add an expert*/
+
 	int input;
 	int num;
 	int idx=0;
