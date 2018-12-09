@@ -11,7 +11,7 @@ typedef struct{
 Expert exp[50];
 
 int add_expert(int idx){	
-	/*  the purpose of this function is to add an experts*/
+
 	int size;
 	int input;
 	printf("size:");
