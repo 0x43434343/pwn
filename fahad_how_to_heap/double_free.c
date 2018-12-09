@@ -1,13 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-/*
-
-the only problem I got is , show_expert(); doesn't show the list :(
-Besides that the problem that I got is I can't allocate a different allocation in heap
-so you have to figure out how to solve that , or you gonna die yao
-
-*/
 
 typedef struct{
 
@@ -58,8 +51,6 @@ void show_expert(int idx){
 
 void show_menu(){
 	printf("------------------------------------------------\n");
-	printf("# Welcome To Camel Heap Exploitation Platform 2018\n");
-	printf("author; Fahad Alharbi\n");
 	printf("#@0x4142\n");
 	printf("------------------------------------------------\n");
 
